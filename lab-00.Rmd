@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Aniruddh Iyer", "Jacob Cullen", "Lucas Smith", 
+           "Ethan Wood", "Athos Rocha", "Louis Newton"),
+  github_username = c("aniruddhviyer", "s2543500", "ls657", 
+                      "EJamesW05", "athos-roch", "LouisWeil"), 
+  colour = c("navyblue", "blue", "hotpink", 
+             "navyblue", "green", "turquoise"),
+  hobby = c("Hiking", "Football", "Going Out", 
+            "Reading Novels", "Karting", "Triathlon"),
+  favourite_number = c(4, 8, 10, 10, 5, 7)
   )
 
 team_data
@@ -47,19 +47,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+This is a bar graph of a team member's github_username (x-axis) against their favourite_number (y-axis) in he favourite colour of each team member.
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
+p1 + labs(x = "github_username", 
+          y = "favourite_number",
           title = "Insert text here")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+This is a bar graph of a team member's github_username (x-axis) against their favourite_number (y-axis) in he favourite colour of each team member.
 
 ### Exercise 20
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+A better representation of the data would be in the form of a pie chart.
